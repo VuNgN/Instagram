@@ -20,15 +20,16 @@ function App() {
         <Container>
           <div className="container_custom">
             <Switch>
+              <Route exact path="/">
+                <Home />
+              </Route>
               <Route path="/inbox">
                 <Inbox />
               </Route>
               <Route path="/explore">
                 <Explore />
               </Route>
-              <Route path="/">
-                <Home />
-              </Route>
+              
             </Switch>
           </div>
         </Container>
